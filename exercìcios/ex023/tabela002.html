@@ -12,16 +12,38 @@
         table{
             width: 500px;
             border-collapse: collapse;
+            position: relative;
+        }
+
+        caption{
+            font-size: 1.5em;
+            font-weight: bold;
+            padding: 10px;
+            background-color: lightgray ;
         }
 
         td, th{
             border: 1px solid black;
             padding: 10px;
         }
+        
+        thead>tr>th{
+            position: sticky;
+            top: -1px;
+            background-color: #383838;
+        }
 
         thead, tfoot{
-            background-color: gray;
+            background-color: #383838;
             color: white;
+        }
+
+        tbody >tr:nth-child(odd){     /*   2n-1*/
+            background-color: white
+        }
+
+        tbody > tr:nth-child(even){   /* 2n*/
+            background-color: lightgray;
         }
 
         td.num{
@@ -32,10 +54,11 @@
 <body>
     <h1>Uso de tabelas grandes</h1>
     <table>
+        <caption>População das Unidades Federativas</caption>
         <thead>
             <tr>
-                <th>Estado</th>
-                <th>População</th>
+                <th scope="col">Estado</th>
+                <th scope="col" style="width: 100px;">População</th>
             </tr>
         </thead>
          
@@ -151,10 +174,34 @@
         </tbody>
         <tfoot>
             <tr>
-                <th>Total de Habitantes</th>
+                <th scope="row">Total de Habitantes</th>
                 <td class="num"><strong>212 583 750</strong></td>
             </tr>
         </tfoot>
     </table>
+    <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Nulla facere sed numquam a quae obcaecati cumque, nostrum fuga, et impedit vero, molestias sequi vel ipsum ipsa? Ipsum eius quod omnis? Lorem ipsum dolor sit amet consectetur adipisicing elit. Tempore facere doloribus doloremque perferendis minus inventore quos illo neque deserunt tempora, nisi esse aperiam cumque laboriosam blanditiis corrupti eligendi. Nam, nesciunt?
+        Autem ab sint quam unde, est aut fuga, animi possimus recusandae aperiam ipsum. Suscipit provident eveniet aperiam voluptatem, in quo reiciendis aliquid! Aut distinctio quam placeat nobis corporis, minus harum.
+        Minus rem nemo nihil nulla aliquam, sequi eligendi obcaecati expedita aut quod corrupti, velit possimus placeat maxime animi eaque, tempora natus tempore impedit voluptas. Ullam quisquam modi nulla odio exercitationem.
+        Velit necessitatibus tempora impedit suscipit, ullam omnis corporis mollitia esse minima dolorum fuga doloribus, aliquid nam libero amet dicta similique. Minus dolore aliquid quod, sit unde reprehenderit impedit adipisci at?</p>
+        <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Nulla facere sed numquam a quae obcaecati cumque, nostrum fuga, et impedit vero, molestias sequi vel ipsum ipsa? Ipsum eius quod omnis? Lorem ipsum dolor sit amet consectetur adipisicing elit. Tempore facere doloribus doloremque perferendis minus inventore quos illo neque deserunt tempora, nisi esse aperiam cumque laboriosam blanditiis corrupti eligendi. Nam, nesciunt?
+        Autem ab sint quam unde, est aut fuga, animi possimus recusandae aperiam ipsum. Suscipit provident eveniet aperiam voluptatem, in quo reiciendis aliquid! Aut distinctio quam placeat nobis corporis, minus harum.
+        Minus rem nemo nihil nulla aliquam, sequi eligendi obcaecati expedita aut quod corrupti, velit possimus placeat maxime animi eaque, tempora natus tempore impedit voluptas. Ullam quisquam modi nulla odio exercitationem.
+        Velit necessitatibus tempora impedit suscipit, ullam omnis corporis mollitia esse minima dolorum fuga doloribus, aliquid nam libero amet dicta similique. Minus dolore aliquid quod, sit unde reprehenderit impedit adipisci at?</p>
+        <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Nulla facere sed numquam a quae obcaecati cumque, nostrum fuga, et impedit vero, molestias sequi vel ipsum ipsa? Ipsum eius quod omnis? Lorem ipsum dolor sit amet consectetur adipisicing elit. Tempore facere doloribus doloremque perferendis minus inventore quos illo neque deserunt tempora, nisi esse aperiam cumque laboriosam blanditiis corrupti eligendi. Nam, nesciunt?
+        Autem ab sint quam unde, est aut fuga, animi possimus recusandae aperiam ipsum. Suscipit provident eveniet aperiam voluptatem, in quo reiciendis aliquid! Aut distinctio quam placeat nobis corporis, minus harum.
+        Minus rem nemo nihil nulla aliquam, sequi eligendi obcaecati expedita aut quod corrupti, velit possimus placeat maxime animi eaque, tempora natus tempore impedit voluptas. Ullam quisquam modi nulla odio exercitationem.
+        Velit necessitatibus tempora impedit suscipit, ullam omnis corporis mollitia esse minima dolorum fuga doloribus, aliquid nam libero amet dicta similique. Minus dolore aliquid quod, sit unde reprehenderit impedit adipisci at?</p>
+        <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Nulla facere sed numquam a quae obcaecati cumque, nostrum fuga, et impedit vero, molestias sequi vel ipsum ipsa? Ipsum eius quod omnis? Lorem ipsum dolor sit amet consectetur adipisicing elit. Tempore facere doloribus doloremque perferendis minus inventore quos illo neque deserunt tempora, nisi esse aperiam cumque laboriosam blanditiis corrupti eligendi. Nam, nesciunt?
+        Autem ab sint quam unde, est aut fuga, animi possimus recusandae aperiam ipsum. Suscipit provident eveniet aperiam voluptatem, in quo reiciendis aliquid! Aut distinctio quam placeat nobis corporis, minus harum.
+        Minus rem nemo nihil nulla aliquam, sequi eligendi obcaecati expedita aut quod corrupti, velit possimus placeat maxime animi eaque, tempora natus tempore impedit voluptas. Ullam quisquam modi nulla odio exercitationem.
+        Velit necessitatibus tempora impedit suscipit, ullam omnis corporis mollitia esse minima dolorum fuga doloribus, aliquid nam libero amet dicta similique. Minus dolore aliquid quod, sit unde reprehenderit impedit adipisci at?</p>
+        <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Nulla facere sed numquam a quae obcaecati cumque, nostrum fuga, et impedit vero, molestias sequi vel ipsum ipsa? Ipsum eius quod omnis? Lorem ipsum dolor sit amet consectetur adipisicing elit. Tempore facere doloribus doloremque perferendis minus inventore quos illo neque deserunt tempora, nisi esse aperiam cumque laboriosam blanditiis corrupti eligendi. Nam, nesciunt?
+        Autem ab sint quam unde, est aut fuga, animi possimus recusandae aperiam ipsum. Suscipit provident eveniet aperiam voluptatem, in quo reiciendis aliquid! Aut distinctio quam placeat nobis corporis, minus harum.
+        Minus rem nemo nihil nulla aliquam, sequi eligendi obcaecati expedita aut quod corrupti, velit possimus placeat maxime animi eaque, tempora natus tempore impedit voluptas. Ullam quisquam modi nulla odio exercitationem.
+        Velit necessitatibus tempora impedit suscipit, ullam omnis corporis mollitia esse minima dolorum fuga doloribus, aliquid nam libero amet dicta similique. Minus dolore aliquid quod, sit unde reprehenderit impedit adipisci at?</p>
+        <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Nulla facere sed numquam a quae obcaecati cumque, nostrum fuga, et impedit vero, molestias sequi vel ipsum ipsa? Ipsum eius quod omnis? Lorem ipsum dolor sit amet consectetur adipisicing elit. Tempore facere doloribus doloremque perferendis minus inventore quos illo neque deserunt tempora, nisi esse aperiam cumque laboriosam blanditiis corrupti eligendi. Nam, nesciunt?
+        Autem ab sint quam unde, est aut fuga, animi possimus recusandae aperiam ipsum. Suscipit provident eveniet aperiam voluptatem, in quo reiciendis aliquid! Aut distinctio quam placeat nobis corporis, minus harum.
+        Minus rem nemo nihil nulla aliquam, sequi eligendi obcaecati expedita aut quod corrupti, velit possimus placeat maxime animi eaque, tempora natus tempore impedit voluptas. Ullam quisquam modi nulla odio exercitationem.
+        Velit necessitatibus tempora impedit suscipit, ullam omnis corporis mollitia esse minima dolorum fuga doloribus, aliquid nam libero amet dicta similique. Minus dolore aliquid quod, sit unde reprehenderit impedit adipisci at?</p>
 </body>
 </html>
