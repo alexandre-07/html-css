@@ -1,0 +1,82 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Formulário</title>
+    <style>
+        header{
+            text-align: center;
+            background-color: rgb(43, 105, 43);
+            margin: -25px;
+            padding: 3px 3px;
+        }
+
+        header h1{
+            font-family: Arial, Helvetica, sans-serif;
+            font-variant: small-caps;
+            font-weight: bolder;
+            color: white;
+            text-shadow: 1px 1px 3px black;
+        }
+
+        form{
+            position: absolute;
+            top: 50%;
+            left: 50%;
+            transform: translate(-50%, -50%);
+
+            padding: 10px;
+        }
+
+        fieldset{
+            width: 300px;
+            border-color: rgb(43, 105, 43);
+            box-shadow: 1px 1px 3px rgba(0, 0, 0, 0.462);
+        }
+
+        a#enviar{
+            text-decoration: none;
+            color: black;
+
+            margin-right: 5px;
+        }
+    </style>
+</head>
+<body>
+
+    <header>
+        <h1>cadastro</h1>
+    </header>
+
+    <form action="" method="post" autocomplete="on">
+
+        <fieldset>
+            <legend>Prencha seus Dados</legend>
+
+            <p>
+                <label for="inome">Nome Completo: </label>
+                <input type="text" name="nome" id="inome" size="20" required>
+            </p>
+
+
+
+            <p>
+                <label for="iprof">Profissão: </label>
+                <input type="text" name="prof" id="iprof" required list="lstprof" >
+                <datalist id="lstprof">
+                    
+                    <option>Boa Cozinheira</option>
+                    <option>Péssima Cozinheira</option>
+                </datalist>
+            </p>
+            <p>
+                <a id="enviar" href="parabens.html">Enviar</a>
+            </p>
+        </fieldset>
+
+
+        
+    </form>
+</body>
+</html>
