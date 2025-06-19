@@ -1,0 +1,46 @@
+@charset "UTF-8";
+
+.container{
+    display: grid;
+    grid-template: 80px 50px 400px 50px / 3fr 1fr;
+}
+
+.topo{
+    background-color: red;
+    grid-area: 1 / 1 / 2 / 3;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.menu{
+    background-color: blue;
+    grid-area: 2 / 1 / 3 / 3;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.principal{
+    background: green;
+    grid-area: 3 / 1 / 4 / 2;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.secundario{
+    background-color: purple;
+    grid-area: 3 / 2 / 4 / 3;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.rodape{
+    background-color: yellow;
+    grid-area: 4 / 1 / 5 / 3;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
